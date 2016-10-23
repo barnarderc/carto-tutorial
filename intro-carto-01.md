@@ -15,8 +15,15 @@ In this first introductory tutorial users will:
 
 Subsequent workshops demonstrate how to execute simple data manipulations in Carto, as well as add interactive elements, customize basemaps, and embed and share maps.
 
-***
+- - -
 ####Creating a Carto Account
+
+To begin using Carto, users must first create an online account [here](https://carto.com/signup). Carto's basic account is free, and allows users to upload a limited number of files. 
+
+Once you've created your account, and verified your email, when you sign into Carto you will be presented with the option to begin by creating a new map. 
+
+![Intro page](https://github.com/barnarderc/carto-tutorial/blob/master/images/create-account.JPG?raw=true)
+
 
 
 
