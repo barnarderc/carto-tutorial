@@ -10,5 +10,8 @@ In this first introductory tutorial users will:
 	3. Learn how to upload simple datasets to their Carto account
 	4. Learn basic interface and visualization tools available
 
-Subsequent workshops will demonstrate how to execute simple data manipulations in Carto, as well as add interactive elements, and customize basemaps. 
+Subsequent workshops demonstrate how to execute simple data manipulations in Carto, as well as add interactive elements, customize basemaps, and embed and share maps.
+
+
+
 
