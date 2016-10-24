@@ -30,13 +30,16 @@ Once you've created your account, and verified your email, when you sign into Ca
 
 #### Becoming Familiar with Carto's Interface 
 
-Carto's platform divides users' accounts into a **Datasets** tab and a ***Map*** tab. In the Datasets tab, users can upload, edit, view or delete their own datasets. In the map view, users are able to build interactive mapping projects, combining one or more of their own datasets, to be published or shared. 
+Carto's platform divides users' accounts into a **Datasets** tab and a ***Map** tab. In the Datasets tab, users can upload, edit, view or delete their own datasets. In the map view, users are able to build interactive mapping projects, combining one or more of their own datasets, to be published or shared. 
 
 ![](https://github.com/barnarderc/carto-tutorial/blob/master/images/map-datasets-view.JPG?raw=true)
 
-In order to begin mapping the data for this tutorial, we must first upload our dataset to Carto. The data we will be using is in a tabular format, representing location points for a group of people as they travel from a starting location to Paris, France. Here is a peek at the data structure: 
+We will begin using Carto by uploading our dataset, **carto-tutorial-data.csv** from the **data** folder. Before we upload this data to Carto, let's take a look at how it is formatted. 
 
-![](https://github.com/barnarderc/carto-tutorial/blob/master/images/data-descrip.JPG?raw=true)
+- - - 
+
+The data we will be using is in a tabular format, representing location points for three people as they travel from different starting locations, and end up in Paris, France. Here is a peek at the data structure: 
+
 
 The data is formatted with 7 columns:
 -	`person`: Person in the dataset's name, identifying who was at the given location point
@@ -48,8 +51,10 @@ The data is formatted with 7 columns:
 -	`id`: Unique id for each person, to identify who was at given location
 
 
+![](https://github.com/barnarderc/carto-tutorial/blob/master/images/data-descrip.JPG?raw=true)
 
 
+Each of the three people has 7 location stops, as they make their way around the world to Paris. Each row represents one stop. In this tutorial, we are interested in mapping these individuals' movement, following their sequence of stops. We do not have any information about how much time they spend in each stop, but we do know the order they travel based on the `sequence` column. We also know which person stops where because we have an `id` column and a column with their name (`person`). 
 
 
 
