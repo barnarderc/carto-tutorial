@@ -39,13 +39,13 @@ In order to begin mapping the data for this tutorial, we must first upload our d
 ![](https://github.com/barnarderc/carto-tutorial/blob/master/images/data-descrip.JPG?raw=true)
 
 The data is formatted with 7 columns:
-1. `person`: Person in the dataset's name, identifying who was at the given location point
-2. `sequence`: Number of the sequence in which the given person stopped at the location point (if 1, then row represents the person's first stop, if 2, represents their second stop, etc.)
-3. `lat`: Number representing the latitude; is one half of the location information necessary to plot the points in Carto. 
-4. `lon`: Number representing the longitude; second half of the location information necessary to plot the points in Carto. 
-5. `location`: Name of the city, if given, of the person's location
-6. `country`: Name of the country, of location
-7. `id`: Unique id for each person, to identify who was at given location
+-	`person`: Person in the dataset's name, identifying who was at the given location point
+-	`sequence`: Number of the sequence in which the given person stopped at the location point (if 1, then row represents the person's first stop, if 2, represents their second stop, etc.)
+-	`lat`: Number representing the latitude; is one half of the location information necessary to plot the points in Carto. 
+-	`lon`: Number representing the longitude; second half of the location information necessary to plot the points in Carto. 
+-	`location`: Name of the city, if given, of the person's location
+-	`country`: Name of the country, of location
+-	`id`: Unique id for each person, to identify who was at given location
 
 
 
