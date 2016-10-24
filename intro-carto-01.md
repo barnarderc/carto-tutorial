@@ -72,6 +72,9 @@ Once chosen, connect the data by clicking "Connect Dataset".
 
 - - - 
 
-When the data is finished uploading, Carto will open the dataset and you should see the same rows and columns as shown previously. One main difference that should be noted, is that Carto has added a column `the_geom`. This column tells Carto how to map the points, and is based off of our `lat` and `lon` columns. 
+When the data is finished uploading, Carto will open the dataset and you should see the same rows and columns as shown previously. One main difference that should be noted, is that Carto has added a column `the_geom`. This column tells Carto how to map the points, and is based off of our `lat` and `lon` columns. Carto has also added a column called `cartodb_id`; this is just a column with unique numbers for each row. 
 
+From here, we can go ahead and display this data on a map. At the top of the table, there is a sliding icon, which currently shows that we are in **Data View**. Toggle the slider to **Map View**. 
+
+![](https://github.com/barnarderc/carto-tutorial/blob/master/images/map-view-1.JPG?raw=true)
 
