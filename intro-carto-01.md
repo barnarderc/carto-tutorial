@@ -3,7 +3,7 @@
 ####Workshop Objectives 
 This exercise is intended to introduce users to mapping and displaying spatial information using the online platform, Carto. 
 
-[Carto](https://carto.com) is an online platform that allows users to upload data and provides tools to visualize that data in interactive maps. Maps made on Carto can be shared and embeded on websites and in different formats. 
+[Carto](https://carto.com) is an online platform that allows users to upload data and provides tools to visualize that data in interactive maps. Maps made on Carto can be shared and embeded on websites and in different formats. On of the advantages of using Carto as opposed to other interactive mapping platforms is that it allows you to directly upload your datasets and manipulate them online. This functionality includes selecting certain specific parts of your dataset using SQL-style queries. 
 
 In this first introductory tutorial users will:
 
@@ -29,6 +29,24 @@ Once you've created your account, and verified your email, when you sign into Ca
 - - - 
 
 #### Becoming Familiar with Carto's Interface 
+
+Carto's platform divides users' accounts into a **Datasets** tab and a ***Map*** tab. In the Datasets tab, users can upload, edit, view or delete their own datasets. In the map view, users are able to build interactive mapping projects, combining one or more of their own datasets, to be published or shared. 
+
+![](https://github.com/barnarderc/carto-tutorial/blob/master/images/map-datasets-view.JPG?raw=true)
+
+In order to begin mapping the data for this tutorial, we must first upload our dataset to Carto. The data we will be using is in a tabular format, representing location points for a group of people as they travel from a starting location to Paris, France. Here is a peek at the data structure: 
+
+![](https://github.com/barnarderc/carto-tutorial/blob/master/images/data-descrip.JPG?raw=true)
+
+The data is formatted with 7 columns:
+1. `person`: Person in the dataset's name, identifying who was at the given location point
+2. `sequence`: Number of the sequence in which the given person stopped at the location point (if 1, then row represents the person's first stop, if 2, represents their second stop, etc.)
+3. `lat`: Number representing the latitude; is one half of the location information necessary to plot the points in Carto. 
+4. `lon`: Number representing the longitude; second half of the location information necessary to plot the points in Carto. 
+5. `location`: Name of the city, if given, of the person's location
+6. `country`: Name of the country, of location
+7. `id`: Unique id for each person, to identify who was at given location
+
 
 
 
