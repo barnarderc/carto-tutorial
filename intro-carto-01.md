@@ -56,5 +56,22 @@ The data is formatted with 7 columns:
 
 Each of the three people has 7 location stops, as they make their way around the world to Paris. Each row represents one stop. In this tutorial, we are interested in mapping these individuals' movement, following their sequence of stops. We do not have any information about how much time they spend in each stop, but we do know the order they travel based on the `sequence` column. We also know which person stops where because we have an `id` column and a column with their name (`person`). 
 
+Now that we have an idea of what our data looks like, and what we are interested in mapping, we can upload the dataset to Carto and begin to explore and visualize it. 
+
+- - - 
+
+On the Carto web page, navigate to the "Your Datasets" tab, and click on the "New Dataset" option on the right-hand side of the page. A new window will appear, prompting users to choose the way in which to connect their dataset. 
+
+![](https://github.com/barnarderc/carto-tutorial/blob/master/images/carto-upload-dataset.JPG?raw=true)
+
+Users are able to connect datasets from a variety of sources, including data hosted on Google Drive and Dropbox. Users can also upload data in a variety of formats, tabular but also geographic. 
+
+In this case we have our **carto-tutorial-data.csv**, which you should download, and which we will upload by browsing to its downloaded location on your local computer. 
+
+Once chosen, connect the data by clicking "Connect Dataset". 
+
+- - - 
+
+When the data is finished uploading, Carto will open the dataset and you should see the same rows and columns as shown previously. One main difference that should be noted, is that Carto has added a column `the_geom`. This column tells Carto how to map the points, and is based off of our `lat` and `lon` columns. 
 
 
