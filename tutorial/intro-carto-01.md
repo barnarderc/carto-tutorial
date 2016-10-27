@@ -93,6 +93,8 @@ In the Map Editor view, there are many icons and tools you can use to customize 
 ![](https://github.com/barnarderc/carto-tutorial/blob/master/images/basemap-elements-2.JPG?raw=true)
 
 In order to change the map background, in the bottom left of the map there is the **Change Basemap** icon. Clicking this will bring up a menu of different background or basemap options. CARTO offers some options with or without labels, and allows you to connect to other basemaps. Here you can also connect customized basemaps from other sources, such as Mapbox. 
+
+
 ![](https://github.com/barnarderc/carto-tutorial/blob/master/images/basemap-elements.JPG?raw=true)
 
 On the top of your Map Editor, there are icons that allow you to ad drawn items to your map, as well as labels, image annotations and text. If you click `Add Title`, a floating title will appear on your map. 
@@ -102,7 +104,14 @@ On the top of your Map Editor, there are icons that allow you to ad drawn items 
 
 Double-clicking this title will allow you to rename and edit the appearance.
 
+- - -
 
+####Editing Data Visualization & Adding Interactivity 
 
+In your Map Edit view, on the right-side of the page, are tabs that allow you to edit the appearance of your data. 
+
+![](https://github.com/barnarderc/carto-tutorial/blob/master/images/layer-properties-2.JPG?raw=true)
+
+In this layer tab, you have multiple ways to customize the data visualization. Clicking on the second icon that looks like a paintbrush, you can navigate to the **Map Layer Wizard**, where you can choose what information will be used to color and code your data. Currently, your points are visualized using 
 
 
