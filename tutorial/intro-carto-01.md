@@ -81,5 +81,22 @@ From here, we can go ahead and display this data on a map. At the top of the tab
 
 In **Map View**, the data will be visualized as points, with one point representing each row of data in our dataset. When the points are first visualized, all of them are represented as the same color, and we do not see any differences based on which of our three subjects' locations a given point represents.
 
+In order to begin altering the way your map looks, we must first create a map from this data. Click on the button in the top right of your page that says **Visualize**. After you click Visualize, you will be prompted to create a map, so click **Ok, Click Map**. 
+
+You will now have a map open in the **Map Editor** mode, and you can now alter your map, and make it ready to be published and shared.
+
+Important Elements in Map Editor mode:
+
+![](https://github.com/barnarderc/carto-tutorial/blob/master/images/basemap-elements-2.JPG?raw=true)
+
+![](https://github.com/barnarderc/carto-tutorial/blob/master/images/basemap-elements.JPG?raw=true)
+
+
+
+![](https://github.com/barnarderc/carto-tutorial/blob/master/images/publish.JPG?raw=true)
+
+
+![](https://github.com/barnarderc/carto-tutorial/blob/master/images/layer-properties.JPG?raw=true)
+
 
 
