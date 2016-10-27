@@ -87,16 +87,22 @@ You will now have a map open in the **Map Editor** mode, and you can now alter y
 
 Important Elements in Map Editor mode:
 
+In the Map Editor view, there are many icons and tools you can use to customize the look of your map, including its background, your data, and interactive elements. 
+
+
 ![](https://github.com/barnarderc/carto-tutorial/blob/master/images/basemap-elements-2.JPG?raw=true)
 
+In order to change the map background, in the bottom left of the map there is the **Change Basemap** icon. Clicking this will bring up a menu of different background or basemap options. CARTO offers some options with or without labels, and allows you to connect to other basemaps. Here you can also connect customized basemaps from other sources, such as Mapbox. 
 ![](https://github.com/barnarderc/carto-tutorial/blob/master/images/basemap-elements.JPG?raw=true)
 
+On the top of your Map Editor, there are icons that allow you to ad drawn items to your map, as well as labels, image annotations and text. If you click `Add Title`, a floating title will appear on your map. 
 
 
-![](https://github.com/barnarderc/carto-tutorial/blob/master/images/publish.JPG?raw=true)
+![](https://github.com/barnarderc/carto-tutorial/blob/master/images/map-title.JPG?raw=true)
+
+Double-clicking this title will allow you to rename and edit the appearance.
 
 
-![](https://github.com/barnarderc/carto-tutorial/blob/master/images/layer-properties.JPG?raw=true)
 
 
 
