@@ -136,7 +136,29 @@ From here, navigate to the layer properties tab and click on the **Filter** tab:
 
 ![](https://github.com/barnarderc/carto-tutorial/blob/master/images/filter.JPG?raw=true)
 
-In the filter tab, choose the column `person` to filter our rows by each person. 
+In the filter tab, choose the column `person` to filter our rows by each person. You should now see a list of all three subjects' names. If you click on any of them, they will be deselected and filtered out of the data (this is not permanent and you can turn them on and off). 
+
+Turn off both "Natasha Romanoff" and "James Howlett". Now, you should only have "Ami Han" selected. On top of your dataset, a notification should appear that asks if you want to "create dataset from query or clear view". 
+
+We want to create a dataset from this query with just "Ami Han"'s rows. Click "create dataset from query". 
+
+Carto will navigate you now to your newly created dataset, which will be named "carto_tutorial_data_copy". Rename this file "Ami_Han". 
+
+Now, let's do the same thing for our other two subjects. Click the back arrow at the top left of the page next to the dataset title to navigate back to your datasets. 
+
+Click on "carto_tutorial_data", and return to the **Filter** tab. Select "Natasha Romanoff" and deselect "Ami Han" and "James Howlett" (in the filter tab with the column `person` selected).
+
+Choose "create dataset from this query", which will bring you to your newly subsetted dataset, which you should rename "Natasha_Romanoff". 
+
+Repeat the process for "James Howlett", renaming the new dataset "James_Howlett". 
+
+Once this process of subsetting your data has been completed, navigate once more to **Your Datasets** page; you should now have four datasets: carto_tutorial_data, Natasha_Romanoff, Ami_Han, James_Howlett. 
+
+Let's go back to our map now. 
+
+- - -
+
+
 
 
 
