@@ -30,7 +30,7 @@ Once you've created your account, and verified your email, when you sign into Ca
 
 #### Becoming Familiar with Carto's Interface 
 
-Carto's platform divides users' accounts into a **Datasets** tab and a ***Map** tab. In the Datasets tab, users can upload, edit, view or delete their own datasets. In the map view, users are able to build interactive mapping projects, combining one or more of their own datasets, to be published or shared. 
+Carto's platform divides users' accounts into a **Datasets** tab and a **Map** tab. In the Datasets tab, users can upload, edit, view or delete their own datasets. In the map view, users are able to build interactive mapping projects, combining one or more of their own datasets, to be published or shared. 
 
 ![](https://github.com/barnarderc/carto-tutorial/blob/master/images/map-datasets-view.JPG?raw=true)
 
@@ -56,7 +56,7 @@ The data is formatted with 7 columns:
 
 Each of the three people has 7 location stops, as they make their way around the world to Paris. Each row represents one stop. In this tutorial, we are interested in mapping these individuals' movement, following their sequence of stops. We do not have any information about how much time they spend in each stop, but we do know the order they travel based on the `sequence` column. We also know which person stops where because we have an `id` column and a column with their name (`person`). 
 
-Now that we have an idea of what our data looks like, and what we are interested in mapping, we can upload the dataset to Carto and begin to explore and visualize it. 
+Now that we have an idea of what our data looks like, and what we are interested in mapping, we can upload the dataset to Carto and begin to explore and visualize it.
 
 - - - 
 
@@ -64,17 +64,22 @@ On the Carto web page, navigate to the "Your Datasets" tab, and click on the "Ne
 
 ![](https://github.com/barnarderc/carto-tutorial/blob/master/images/carto-upload-dataset.JPG?raw=true)
 
-Users are able to connect datasets from a variety of sources, including data hosted on Google Drive and Dropbox. Users can also upload data in a variety of formats, tabular but also geographic. 
+Users are able to connect datasets from a variety of sources, including data hosted on Google Drive and Dropbox. Users can also upload data in a variety of formats, tabular but also geographic.
 
-In this case we have our **carto-tutorial-data.csv**, which you should download, and which we will upload by browsing to its downloaded location on your local computer. 
+In this case we have our **carto-tutorial-data.csv**, which you should download, and which we will upload by browsing to its downloaded location on your local computer.
 
-Once chosen, connect the data by clicking "Connect Dataset". 
+Once chosen, connect the data by clicking "Connect Dataset".
 
-- - - 
+- - -
 
-When the data is finished uploading, Carto will open the dataset and you should see the same rows and columns as shown previously. One main difference that should be noted, is that Carto has added a column `the_geom`. This column tells Carto how to map the points, and is based off of our `lat` and `lon` columns. Carto has also added a column called `cartodb_id`; this is just a column with unique numbers for each row. 
+When the data is finished uploading, Carto will open the dataset and you should see the same rows and columns as shown previously. One main difference that should be noted, is that Carto has added a column `the_geom`. This column tells Carto how to map the points, and is based off of our `lat` and `lon` columns. Carto has also added a column called `cartodb_id`; this is just a column with unique numbers for each row.
 
 From here, we can go ahead and display this data on a map. At the top of the table, there is a sliding icon, which currently shows that we are in **Data View**. Toggle the slider to **Map View**. 
 
 ![](https://github.com/barnarderc/carto-tutorial/blob/master/images/map-view-1.JPG?raw=true)
+
+
+In **Map View**, the data will be visualized as points, with one point representing each row of data in our dataset. When the points are first visualized, all of them are represented as the same color, and we do not see any differences based on which of our three subjects' locations a given point represents.
+
+
 
