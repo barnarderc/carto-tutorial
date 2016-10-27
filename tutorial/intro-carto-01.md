@@ -112,6 +112,31 @@ In your Map Edit view, on the right-side of the page, are tabs that allow you to
 
 ![](https://github.com/barnarderc/carto-tutorial/blob/master/images/layer-properties-2.JPG?raw=true)
 
-In this layer tab, you have multiple ways to customize the data visualization. Clicking on the second icon that looks like a paintbrush, you can navigate to the **Map Layer Wizard**, where you can choose what information will be used to color and code your data. Currently, your points are visualized using 
+In this layer tab, you have multiple ways to customize the data visualization. Clicking on the second icon that looks like a paintbrush, you can navigate to the **Map Layer Wizard**, where you can choose what information will be used to color and code your data. Currently, your points are visualized using a simple color fill. 
+
+Because we want to visualize these location points by our three people travelers, we want to change our points to distinct colors for each of the three people (we can think of the three of them like categories). 
+
+In the Map Layer Wizard, switch your visualization mode from **Simple** to **Categories**. After choosing Categories as the visualization method, in the layer properties tab, you will be given the option to customize which column from your dataset you want to use as the categories. 
+
+In the dropdown menu next to `column`, choose **person**. This is the column in your data with one of our three subjects' names based on who visited a location point. 
+
+Once you choose the column, you are able to customize the colors representing each of the three people, as well as the size of the location points, and their opacity (fill).
+
+Notice in the map that a legend should appear, labeling each othe three points so your map users know which person corresponds to which point color. (If a legend does not appear, click on the legend icon in the layer tab. There you can customize and add your legend).
+
+Now your map should show points in three different colors based on our three people. We are also interested in showing these three peoples' movement over time. Because of this we will want to use Carto's **Torque** visualization method. This uses a column in the data to create an order in which the points should appear. In our case, we have a column that reflects that movement; the column is called `sequence` and it has coded values from 1-7 for each point in each person's journey. We will use this to create a torque map. 
+
+- - - 
+
+First, let's make our data easier to work with, by filtering our dataset and separating it into separate datasets for each person. This will make it easier to work with and will let us customize our map for each person. 
+
+To do so, click on **Data View**. This will bring us back to the view of our dataset as rows and columns. 
+
+From here, navigate to the layer properties tab and click on the **Filter** tab: 
+
+![](https://github.com/barnarderc/carto-tutorial/blob/master/images/filter.JPG?raw=true)
+
+In the filter tab, choose the column `person` to filter our rows by each person. 
+
 
 
