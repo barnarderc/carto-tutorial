@@ -106,7 +106,7 @@ Double-clicking this title will allow you to rename and edit the appearance.
 
 - - -
 
-####Editing Data Visualization & Adding Interactivity 
+####Editing Data Visualization
 
 In your Map Edit view, on the right-side of the page, are tabs that allow you to edit the appearance of your data. 
 
@@ -154,9 +154,14 @@ Repeat the process for "James Howlett", renaming the new dataset "James_Howlett"
 
 Once this process of subsetting your data has been completed, navigate once more to **Your Datasets** page; you should now have four datasets: carto_tutorial_data, Natasha_Romanoff, Ami_Han, James_Howlett. 
 
-Let's go back to our map now. 
+Let's go back to our map now. Return to your main Carto page by clicking the back arrow from your **Data View** (found at the top left of the page). When open to your Carto dashboard, you should navigate to **Your Maps** dashboard by choosing your maps from the dropdown menu at the top of the page. In your maps page, choose the map you were previously working on, and click **Edit in Carto**.
 
 - - -
+###Adding Interactivity 
+
+In your **Map View** editor, we can now add in the new datasets we just created by subsetting our original file. In the layer properties tabs on the right side, above our initial layer, we have the option to add data by clicking on the plus sign. Click on the plus sign, and add the three datasets you just created ("Natasha_Romanoff", "James_Howlett", and "Ami_Han").
+
+
 
 
 
