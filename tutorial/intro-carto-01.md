@@ -173,9 +173,23 @@ In your **Map View** editor, we can now add in the new dataset we just created, 
 
 For this layer, we can add additional information, in the form of interactive pop ups. In the layer properties tab, click the **info window**. In the info window tab, you can customize your layer pop-up to appear when a point is clicked, or when a user hovers over it. Additionally, you can customize which columns appear in the pop up. **It is important to note, though, that the info windows and pop ups are disabled for Torque layers**. While you can add pop ups for points that are symbolized by category, for example, you cannot for torque layers. 
 
+- - -
 
+###Publishing your Map
 
-https://carto.com/docs/tutorials/gps_track/
+Once you have customized all the features on your map, symbolized your data, and added interactive pop ups, you can export your map and embed it into websites or share its own link. At the top right of your **Map View**, click **Publish**. This will give you the option to embed your map (giving you the html to do so). Alternatively you can copy the link, and share it that way.
+
+- - -
+
+###Additional Resources
+
+While this tutorial has gone over an introduction to using Carto, the website itself has created many tutorials to go over more intermediate mapping projects. Some tutorials that may be useful to combine with this tutorial include:
+
+[Adding lines from point data](https://carto.com/docs/tutorials/gps_track/)
+[Creating a Torque Heatmap](https://carto.com/docs/tutorials/heatmap/)
+[Custom Map Interactivity](https://carto.com/docs/tutorials/custom_interactivity/)
+[Sharing Your Map](https://carto.com/docs/tutorials/sharing_maps/)
+[Merging Two Datasets](https://carto.com/docs/tutorials/merging_data/)
 
 
 
