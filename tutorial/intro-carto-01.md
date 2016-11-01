@@ -124,11 +124,21 @@ Once you choose the column, you are able to customize the colors representing ea
 
 Notice in the map that a legend should appear, labeling each othe three points so your map users know which person corresponds to which point color. (If a legend does not appear, click on the legend icon in the layer tab. There you can customize and add your legend).
 
-Now your map should show points in three different colors based on our three people. We are also interested in showing these three peoples' movement over time. Because of this we will want to use Carto's **Torque** visualization method. This uses a column in the data to create an order in which the points should appear. In our case, we have a column that reflects that movement; the column is called `sequence` and it has coded values from 1-7 for each point in each person's journey. We will use this to create a torque map. 
+Now your map should show points in three different colors based on our three people. We are also interested in showing these three peoples' movement over time. Because of this we will want to use Carto's **Torque** visualization method. This uses a column in the data to create an order in which the points should appear. In our case, we have a column that reflects that movement; the column is called `sequence` and it has coded values from 1-7 for each point in each person's journey. We will use this to create a torque map. Furthermore, Carto provides the option to create either a torque map using one variable, time, or to create a torque map using time, but differentiating by categories. We will use the latter option, since we want to differentiate by our individual people.
 
 - - - 
 
-First, let's make our data easier to work with, by filtering our dataset and separating it into separate datasets for each person. This will make it easier to work with and will let us customize our map for each person. 
+In your layer properties tab, we can now symbolize our layer by different colors, and use the Torque categories visualization method. Symbolize the layer by choosing **Torque Cat**. 
+
+
+Reminders: The **Time Column** in our column is the `sequence` column. The **Category Column** is our column to differentiate between people, using the `person` column. In the layers property you can also customize the length of time spent on each point, as well as the opacity, number of trailing points, etc. 
+
+Our map now reflects each individual's sequence of movements. If we wanted to separate and isolate one of the people in our dataset, we can also do so using Carto.
+
+- - - 
+###Filtering the Data
+
+When working with categorical data, we might want to isolate or filter to a specific category, to visualize it alone on our map. This allows you to work with a single person's data, for example.
 
 To do so, click on **Data View**. This will bring us back to the view of our dataset as rows and columns. 
 
@@ -159,9 +169,12 @@ Let's go back to our map now. Return to your main Carto page by clicking the bac
 - - -
 ###Adding Interactivity 
 
-In your **Map View** editor, we can now add in the new datasets we just created by subsetting our original file. In the layer properties tabs on the right side, above our initial layer, we have the option to add data by clicking on the plus sign. Click on the plus sign, and add the three datasets you just created ("Natasha_Romanoff", "James_Howlett", and "Ami_Han").
+In your **Map View** editor, we can now add in the new datasets we just created, by clicking the plus sign in the layer properties tab. If you have additional datasets you are interested in overlaying, you can add up to 8 to a single map. In this case, we aren't interested specifically in adding more layers to our map, but it is useful in general. 
+
+With our original Torque layer, we have a legend associated with it that explains which points correspond to which person. We can add additional information, though, in the form of interactive pop ups. 
 
 
+https://carto.com/docs/tutorials/gps_track/
 
 
 
