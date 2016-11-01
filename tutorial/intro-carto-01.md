@@ -191,11 +191,11 @@ Once you have customized all the features on your map, symbolized your data, and
 
 While this tutorial has gone over an introduction to using CARTO, the website itself has created many tutorials to go over more intermediate mapping projects. Some tutorials that may be useful to combine with this tutorial include:
 
-[Adding lines from point data](https://carto.com/docs/tutorials/gps_track/)
-[Creating a Torque Heatmap](https://carto.com/docs/tutorials/heatmap/)
-[Custom Map Interactivity](https://carto.com/docs/tutorials/custom_interactivity/)
-[Sharing Your Map](https://carto.com/docs/tutorials/sharing_maps/)
-[Merging Two Datasets](https://carto.com/docs/tutorials/merging_data/)
+- [Adding lines from point data](https://carto.com/docs/tutorials/gps_track/)
+- [Creating a Torque Heatmap](https://carto.com/docs/tutorials/heatmap/)
+- [Custom Map Interactivity](https://carto.com/docs/tutorials/custom_interactivity/)
+- [Sharing Your Map](https://carto.com/docs/tutorials/sharing_maps/)
+- [Merging Two Datasets](https://carto.com/docs/tutorials/merging_data/)
 
 
 
