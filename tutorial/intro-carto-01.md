@@ -1,40 +1,40 @@
-# Introduction to Mapping with Carto 
+# Introduction to Mapping with CARTO 
 
 ####Workshop Objectives 
-This exercise is intended to introduce users to mapping and displaying spatial information using the online platform, Carto. 
+This exercise is intended to introduce users to mapping and displaying spatial information using the online platform, CARTO. 
 
-[Carto](https://carto.com) is an online platform that allows users to upload data and provides tools to visualize that data in interactive maps. Maps made on Carto can be shared and embeded on websites and in different formats. On of the advantages of using Carto as opposed to other interactive mapping platforms is that it allows you to directly upload your datasets and manipulate them online. This functionality includes selecting certain specific parts of your dataset using SQL-style queries. 
+[CARTO](https://carto.com) is an online platform that allows users to upload data and provides tools to visualize that data in interactive maps. Maps made on CARTO can be shared and embeded on websites and in different formats. On of the advantages of using CARTO as opposed to other interactive mapping platforms is that it allows you to directly upload your datasets and manipulate them online. This functionality includes selecting certain specific parts of your dataset using SQL-style queries. 
 
 In this first introductory tutorial users will:
 
-1. Create a Carto account
-1. Become familiar with Carto's dataset and map views
-1. Learn how to upload simple datasets in tabular and vector formats to their Carto account
+1. Create a CARTO account
+1. Become familiar with CARTO's dataset and map views
+1. Learn how to upload simple datasets in tabular and vector formats to their CARTO account
 1. Learn basics of interface and visualization tools 
 
 
-Subsequent tutorial pages demonstrate how to execute simple data manipulations in Carto, as well as add interactive elements, customize basemaps, and embed and share maps.
+Subsequent tutorial pages demonstrate how to execute simple data manipulations in CARTO, as well as add interactive elements, customize basemaps, and embed and share maps.
 
 The data used in this workshop can be found in the data folder of this repository [(here)](https://github.com/barnarderc/carto-tutorial/tree/master/data). 
 
 - - - -
-####Creating a Carto Account
+####Creating a CARTO Account
 
-To begin using Carto, users must first create an online account [here](https://carto.com/signup). Carto's basic account is free, and allows users to upload a limited number of files. 
+To begin using CARTO, users must first create an online account [here](https://carto.com/signup). CARTO's basic account is free, and allows users to upload a limited number of files. 
 
-Once you've created your account, and verified your email, when you sign into Carto you will be presented with the option to begin by creating a new map. 
+Once you've created your account, and verified your email, when you sign into CARTO you will be presented with the option to begin by creating a new map. 
 
 ![Intro page](https://github.com/barnarderc/carto-tutorial/blob/master/images/create-account.JPG?raw=true)
 
 - - - 
 
-#### Becoming Familiar with Carto's Interface 
+#### Becoming Familiar with CARTO's Interface 
 
-Carto's platform divides users' accounts into a **Datasets** tab and a **Map** tab. In the Datasets tab, users can upload, edit, view or delete their own datasets. In the map view, users are able to build interactive mapping projects, combining one or more of their own datasets, to be published or shared. 
+CARTO's platform divides users' accounts into a **Datasets** tab and a **Map** tab. In the Datasets tab, users can upload, edit, view or delete their own datasets. In the map view, users are able to build interactive mapping projects, combining one or more of their own datasets, to be published or shared. 
 
 ![](https://github.com/barnarderc/carto-tutorial/blob/master/images/map-datasets-view.JPG?raw=true)
 
-We will begin using Carto by uploading our dataset, **carto-tutorial-data.csv** from the **data** folder. Before we upload this data to Carto, let's take a look at how it is formatted. 
+We will begin using CARTOCARTO by uploading our dataset, **carto-tutorial-data.csv** from the **data** folder. Before we upload this data to CARTO, let's take a look at how it is formatted. 
 
 - - - 
 
@@ -44,8 +44,8 @@ The data we will be using is in a tabular format, representing location points f
 The data is formatted with 7 columns:
 -	`person`: Person in the dataset's name, identifying who was at the given location point
 -	`sequence`: Number of the sequence in which the given person stopped at the location point (if 1, then row represents the person's first stop, if 2, represents their second stop, etc.)
--	`lat`: Number representing the latitude; is one half of the location information necessary to plot the points in Carto. 
--	`lon`: Number representing the longitude; second half of the location information necessary to plot the points in Carto. 
+-	`lat`: Number representing the latitude; is one half of the location information necessary to plot the points in CARTO. 
+-	`lon`: Number representing the longitude; second half of the location information necessary to plot the points in CARTO. 
 -	`location`: Name of the city, if given, of the person's location
 -	`country`: Name of the country, of location
 -	`id`: Unique id for each person, to identify who was at given location
@@ -56,11 +56,11 @@ The data is formatted with 7 columns:
 
 Each of the three people has 7 location stops, as they make their way around the world to Paris. Each row represents one stop. In this tutorial, we are interested in mapping these individuals' movement, following their sequence of stops. We do not have any information about how much time they spend in each stop, but we do know the order they travel based on the `sequence` column. We also know which person stops where because we have an `id` column and a column with their name (`person`). 
 
-Now that we have an idea of what our data looks like, and what we are interested in mapping, we can upload the dataset to Carto and begin to explore and visualize it.
+Now that we have an idea of what our data looks like, and what we are interested in mapping, we can upload the dataset to CARTO and begin to explore and visualize it.
 
 - - - 
 
-On the Carto web page, navigate to the "Your Datasets" tab, and click on the "New Dataset" option on the right-hand side of the page. A new window will appear, prompting users to choose the way in which to connect their dataset. 
+On the CARTO web page, navigate to the "Your Datasets" tab, and click on the "New Dataset" option on the right-hand side of the page. A new window will appear, prompting users to choose the way in which to connect their dataset. 
 
 ![](https://github.com/barnarderc/carto-tutorial/blob/master/images/carto-upload-dataset.JPG?raw=true)
 
@@ -72,7 +72,7 @@ Once chosen, connect the data by clicking "Connect Dataset".
 
 - - -
 
-When the data is finished uploading, Carto will open the dataset and you should see the same rows and columns as shown previously. One main difference that should be noted, is that Carto has added a column `the_geom`. This column tells Carto how to map the points, and is based off of our `lat` and `lon` columns. Carto has also added a column called `cartodb_id`; this is just a column with unique numbers for each row.
+When the data is finished uploading, CARTO will open the dataset and you should see the same rows and columns as shown previously. One main difference that should be noted, is that CARTO has added a column `the_geom`. This column tells CARTO how to map the points, and is based off of our `lat` and `lon` columns. CARTO has also added a column called `cartodb_id`; this is just a column with unique numbers for each row.
 
 From here, we can go ahead and display this data on a map. At the top of the table, there is a sliding icon, which currently shows that we are in **Data View**. Toggle the slider to **Map View**. 
 
@@ -124,7 +124,7 @@ Once you choose the column, you are able to customize the colors representing ea
 
 Notice in the map that a legend should appear, labeling each othe three points so your map users know which person corresponds to which point color. (If a legend does not appear, click on the legend icon in the layer tab. There you can customize and add your legend).
 
-Now your map should show points in three different colors based on our three people. We are also interested in showing these three peoples' movement over time. Because of this we will want to use Carto's **Torque** visualization method. This uses a column in the data to create an order in which the points should appear. In our case, we have a column that reflects that movement; the column is called `sequence` and it has coded values from 1-7 for each point in each person's journey. We will use this to create a torque map. Furthermore, Carto provides the option to create either a torque map using one variable, time, or to create a torque map using time, but differentiating by categories. We will use the latter option, since we want to differentiate by our individual people.
+Now your map should show points in three different colors based on our three people. We are also interested in showing these three peoples' movement over time. Because of this we will want to use CARTO's **Torque** visualization method. This uses a column in the data to create an order in which the points should appear. In our case, we have a column that reflects that movement; the column is called `sequence` and it has coded values from 1-7 for each point in each person's journey. We will use this to create a torque map. Furthermore, CARTO provides the option to create either a torque map using one variable, time, or to create a torque map using time, but differentiating by categories. We will use the latter option, since we want to differentiate by our individual people.
 
 - - - 
 
@@ -133,7 +133,7 @@ In your layer properties tab, we can now symbolize our layer by different colors
 
 Reminders: The **Time Column** in our column is the `sequence` column. The **Category Column** is our column to differentiate between people, using the `person` column. In the layers property you can also customize the length of time spent on each point, as well as the opacity, number of trailing points, etc. 
 
-Our map now reflects each individual's sequence of movements. If we wanted to separate and isolate one of the people in our dataset, we can also do so using Carto.
+Our map now reflects each individual's sequence of movements. If we wanted to separate and isolate one of the people in our dataset, we can also do so using CARTO.
 
 - - - 
 ###Filtering the Data
@@ -152,7 +152,7 @@ Turn off both "Natasha Romanoff" and "James Howlett". Now, you should only have 
 
 We want to create a dataset from this query with just "Ami Han"'s rows. Click "create dataset from query". 
 
-Carto will navigate you now to your newly created dataset, which will be named "carto_tutorial_data_copy". Rename this file "Ami_Han". 
+CARTO will navigate you now to your newly created dataset, which will be named "carto_tutorial_data_copy". Rename this file "Ami_Han". 
 
 Now, let's do the same thing for our other two subjects. Click the back arrow at the top left of the page next to the dataset title to navigate back to your datasets. 
 
@@ -164,7 +164,7 @@ Repeat the process for "James Howlett", renaming the new dataset "James_Howlett"
 
 Once this process of subsetting your data has been completed, navigate once more to **Your Datasets** page; you should now have four datasets: carto_tutorial_data, Natasha_Romanoff, Ami_Han, James_Howlett. 
 
-Let's go back to our map now. Return to your main Carto page by clicking the back arrow from your **Data View** (found at the top left of the page). When open to your Carto dashboard, you should navigate to **Your Maps** dashboard by choosing your maps from the dropdown menu at the top of the page. In your maps page, choose the map you were previously working on, and click **Edit in Carto**.
+Let's go back to our map now. Return to your main CARTO page by clicking the back arrow from your **Data View** (found at the top left of the page). When open to your CARTO dashboard, you should navigate to **Your Maps** dashboard by choosing your maps from the dropdown menu at the top of the page. In your maps page, choose the map you were previously working on, and click **Edit in CARTO**.
 
 - - -
 ###Adding Interactivity
@@ -183,7 +183,7 @@ Once you have customized all the features on your map, symbolized your data, and
 
 ###Additional Resources
 
-While this tutorial has gone over an introduction to using Carto, the website itself has created many tutorials to go over more intermediate mapping projects. Some tutorials that may be useful to combine with this tutorial include:
+While this tutorial has gone over an introduction to using CARTO, the website itself has created many tutorials to go over more intermediate mapping projects. Some tutorials that may be useful to combine with this tutorial include:
 
 [Adding lines from point data](https://carto.com/docs/tutorials/gps_track/)
 [Creating a Torque Heatmap](https://carto.com/docs/tutorials/heatmap/)
