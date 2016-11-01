@@ -171,13 +171,19 @@ Let's go back to our map now. Return to your main CARTO page by clicking the bac
 
 In your **Map View** editor, we can now add in the new dataset we just created, by clicking the plus sign in the layer properties tab. If you have additional datasets you are interested in overlaying, you can add up to 8 to a single map. In this case, we aren't interested specifically in adding more layers to our map, but it is useful in general. Click the plus sign **Add layer** and choose the data layer "Ami_Han" which we created previously.
 
-For this layer, we can add additional information, in the form of interactive pop ups. In the layer properties tab, click the **info window**. In the info window tab, you can customize your layer pop-up to appear when a point is clicked, or when a user hovers over it. Additionally, you can customize which columns appear in the pop up. **It is important to note, though, that the info windows and pop ups are disabled for Torque layers**. While you can add pop ups for points that are symbolized by category, for example, you cannot for torque layers. 
+For this layer, we can add additional information, in the form of interactive pop ups. In the layer properties tab, click the **info window**. 
+
+![](https://github.com/barnarderc/carto-tutorial/blob/master/images/info-window.JPG?raw=true)
+
+In the info window tab, you can customize your layer pop-up to appear when a point is clicked, or when a user hovers over it. Additionally, you can customize which columns appear in the pop up. **It is important to note, though, that the info windows and pop ups are disabled for Torque layers**. While you can add pop ups for points that are symbolized by category, for example, you cannot for torque layers. 
 
 - - -
 
 ###Publishing your Map
 
 Once you have customized all the features on your map, symbolized your data, and added interactive pop ups, you can export your map and embed it into websites or share its own link. At the top right of your **Map View**, click **Publish**. This will give you the option to embed your map (giving you the html to do so). Alternatively you can copy the link, and share it that way.
+
+![](https://github.com/barnarderc/carto-tutorial/blob/master/images/publish2.JPG?raw=true)
 
 - - -
 
